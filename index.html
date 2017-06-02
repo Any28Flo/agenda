@@ -21,7 +21,7 @@
 			<p>Contador : 0 </p>
 
 		</div>
-		<div class="row">
+		<div class="row" id="listaContactos">
 			
 		</div>
 		<div class="row">
@@ -29,9 +29,26 @@
 			<!-- Modal Structure -->
   			<div id="modal1" class="modal">
     			<div class="modal-content">
-      			<h4>Modal Header</h4>
-      			<p>A bunch of text</p>
-    			</div>
+      				<form class="col s12">
+      					<div class="row">
+      						<div class="input-fiel col s6">
+      							 <input placeholder="Nombre" id="first_name" type="text" class="validate">
+          						 <!-- <label for="first_name">Nombre</label> -->
+      						</div>
+      						<div class="input-fiel col s6">
+      							 <input placeholder="Apellido" id="first_name" type="text" class="validate">
+          						 <!-- <label for="first_name">Nombre</label> -->
+      						</div>
+      						<div class="input-fiel col s6">
+      							 <input placeholder="Telefono" id="telefono" type="number" class="validate">
+          						 <!-- <label for="first_name">Nombre</label> -->
+      						</div>
+      						<div class="input-field col s12">
+          						<input placeholder="Nombre" id="email" type="email" class="validate">
+          						<label for="email">Email</label>
+        					</div>
+      					</div>
+      				</form>
     			<div class="modal-footer">
       			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     			</div>
