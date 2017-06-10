@@ -13,14 +13,19 @@
 	  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<header>
-		<h1>CONTACTOS</h1>
+	<header class="container">
+  <div class="row">
+    <div class="col s12">
+      <h1 class="flow-text center">CONTACTOS</h1>
+    </div>
+  </div>
+		
 	</header>
 	<div class="container">
 		<div class="row">
       <div class="col s10">
-        <p>Contador :  </p>
-        <p id="contador">0</p>
+        <p class="flow-text">Contador :  </p>
+        <p class="flow-text" id="contador">0</p>
       </div>
 			
 		</div>
@@ -31,39 +36,41 @@
 			
 		</div>
 		<div class="row">
-			<a  class="waves-effect waves-light btn" href="#modal1">Agregar</a>
-			<a class="waves-effect waves-light btn" >Buscar</a>
-			<!-- Modal Structure -->
-  			<div id="modal1" class="modal">
-    			<div class="modal-content">
-      				<form class="col s12" >
-      					<div class="row">
-      						<div class="input-fiel col s6">
-      							 <input placeholder="Nombre" id="nombre" type="text" class="validate">
-          						 <!-- <label for="first_name">Nombre</label> -->
-      						</div>
-      						<div class="input-fiel col s6">
-      							 <input placeholder="Apellido" id="apellido" type="text" class="validate">
-          						 <!-- <label for="first_name">Nombre</label> -->
-      						</div>
-      						<div class="input-fiel col s6">
-      							 <input placeholder="Telefono" id="telefono" type="number" class="validate">
-          						 <!-- <label for="first_name">Nombre</label> -->
-      						</div>
-      						<div class="input-field col s12">
-          						<input placeholder="Correo Electronico" id="email" type="email" class="validate">
-          						<label for="email">Email</label>
-        					</div>
-      					</div>
-      				</form>
-    			<div class="modal-footer">
-    				<button  id="agregar" class="modal-action modal-close waves-effect waves-green btn-flat">Agregar</button>
-      				<!-- <a href="#!" >Agregar</a> -->
-      				<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Eliminar</a>
-    			</div>
-  			</div>
+      <div class="col s6">
+        <a  class="waves-effect waves-light btn" href="#modal1">Agregar</a>
+      </div>
+      <div class="col s6">
+         <a class="waves-effect waves-light btn" >Buscar</a>
 
-		</div>
+      </div>
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+                <form class="col s12" >
+                  <div class="row">
+                    <div class="input-fiel col s6">
+                       <input placeholder="Nombre" id="nombre" type="text" class="validate">
+                    </div>
+                    <div class="input-fiel col s6">
+                       <input placeholder="Apellido" id="apellido" type="text" class="validate">
+                    </div>
+                    <div class="input-fiel col s6">
+                       <input placeholder="Telefono" id="telefono" type="number" class="validate">
+                    </div>
+                    <div class="input-field col s12">
+                        <input placeholder="Correo Electronico" id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                  </div>
+                </form>
+            <div class="modal-footer">
+              <button  id="agregar" class="modal-action modal-close waves-effect waves-green btn-flat">Agregar</button>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Eliminar</a>
+            </div>
+          </div>
+
+    </div>      
+      
+			
 	</div>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
