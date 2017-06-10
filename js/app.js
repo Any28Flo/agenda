@@ -1,25 +1,47 @@
 
 
+var $contador= 0 ; 
+var $muestraContador = $("#contador");
 
+var sumaContador = function(){
+
+	$contador++;
+	
+	$muestraContador.text($contador);
+}
 var enviaFormulario = function(){
-	console.log("Yeiii ya envie el formulario");
 	$nuevoContacto = $("#listaContactos");
+
 	//Agrego el nuevo elemento
-	$nuevoContacto.append("<div>");
-	var $nuevaSeccion = $nuevoContacto[0].className="contacto";
+	var $contenedor = $("<div>");
+	$contenedor.addClass("card  s12 m7");	
+
 	$nombre = $("#nombre").val();
 	$apellido = $("#apellido").val();
 	$telefono = $("#telefono").val();
 	$email = $("#email").val();
-	$nuevoContacto.append("<p>"+$nombre+"</p>");
-	$nuevoContacto.append("<p>"+$apellido+"</p>");
-	$nuevoContacto.append("<p>"+$telefono+"</p>");
-	$nuevoContacto.append("<p>"+$email+"</p>");
+	var $elementoNombre =$("<p>Nombre: "+$nombre+"</p>");
+	var $elementoApellido =$("<p>Apellido: "+$apellido+"</p>");
+	var $elementoTelefono = $("<p>Telefono:"+$telefono+"</p>");
+	var $elementoMail = $("<p>Email:"+$email+"</p>");
+
+
+
+
+	$contenedor.append($elementoNombre);
+	$contenedor.append($elementoApellido);
+	$contenedor.append($elementoTelefono);
+	$contenedor.append($elementoMail);
+
+	$nuevoContacto.append($contenedor)
+
+	console.log($nuevoContacto);
 }
  
 var cargaPagina = function(){
 	$('.modal').modal();
 	$("#agregar").click(enviaFormulario);
+	$("#agregar").click(sumaContador);
 }
 
 
